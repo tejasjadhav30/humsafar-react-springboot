@@ -1,0 +1,52 @@
+spring:
+  main:
+    web-application-type: reactive
+  application:
+    name: api-gateway
+
+  cloud:
+    gateway:
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"
+   
+      routes:
+        - id: service1
+          uri: lb://service1
+          predicates:
+            - Path=/service1/**
+          filters:
+            - StripPrefix=1
+
+        - id: service2
+          uri: lb://service2
+          predicates:
+            - Path=/service2/**
+          filters:
+            - StripPrefix=1
+            
+        - id: service3
+          uri: lb://service3
+          predicates:
+            - Path=/service3/**
+          filters:
+            - StripPrefix=1
+            
+       
+       
+             
+
+server:
+  port: 8081
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka
+      
+      

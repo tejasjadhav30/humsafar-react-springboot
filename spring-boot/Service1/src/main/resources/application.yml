@@ -1,0 +1,25 @@
+# service registers under this name
+spring:
+  application:
+    name: service1
+
+#discover ser
+  config:
+    import:
+    - configserver:http://localhost:8088
+
+    spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/Flightbooking
+    username: root
+    password: root@123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+  main:
+    web-application-type: reactive
+
+

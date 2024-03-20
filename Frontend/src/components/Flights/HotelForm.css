@@ -1,0 +1,98 @@
+/* HotelForm.css */
+
+/* Styles for Hotel Booking */
+.submit-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .submit-form h4 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: green;
+  }
+  
+  form {
+    width: 100%;
+  }
+  
+  fieldset {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  select,
+  input,
+  .datepicker {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Hotel Data Section */
+  #hotel-data {
+    margin-top: 30px;
+  }
+  
+  .hotel-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .hotel-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hotel-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .hotel-details p {
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  /* Responsive Styles */
+  @media only screen and (max-width: 768px) {
+    .hotel-item {
+      width: 100%;
+    }
+  }
+.hotel-image{
+    height: auto;
+    width: 50px;
+}  

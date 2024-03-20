@@ -1,0 +1,15 @@
+server:
+  port: 8088
+
+spring:
+  profiles:
+    active: native
+
+  cloud:
+    config:
+    
+     import-check:
+        enabled: false
+
+ 
+   

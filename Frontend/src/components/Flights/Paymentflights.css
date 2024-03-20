@@ -1,0 +1,68 @@
+/* Booking.css */
+
+/* Container Styles */
+div {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Section Styles */
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Flight Details Section */
+  .flight-details {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Payment Successful Section */
+  .payment-success {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #4caf50;
+    border-radius: 5px;
+    background-color: #e9f9e9;
+  }
+  
+  /* Receipt Section */
+  h3 {
+    margin-top: 20px;
+    color: #4caf50;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  /* Customize further based on your design */
+  
