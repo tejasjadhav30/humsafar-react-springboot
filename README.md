@@ -1,6 +1,7 @@
 
 
-Humsafar - React Spring Boot Application
+##Humsafar - React Spring Boot Application
+
 Humsafar is a web application built using React.js for the frontend and Spring Boot for the backend. It provides a platform for users to connect, share experiences, and plan trips together.
 
 Features
